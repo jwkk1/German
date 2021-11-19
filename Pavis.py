@@ -20,9 +20,7 @@ countryroadtime=0
 motorwaykm=0
 motorwaytime=0
 
-
 file =  filedialog.askopenfilenames(initialdir ="C:/",title = "JSON 선택")
-#파일 디렉토리 선택창 실행
 
 while True:
     try:
@@ -50,7 +48,6 @@ while True:
         citytime = citytime/3600
         countryroadtime = countryroadtime/3600
         motorwaytime = motorwaytime/3600
-        # Sec-> Hr
 
         print('day km = ' + str(round(daykm,2)) + 'Km')
         print('day time = ' + str(round(daytime,2)) + 'Hr')
@@ -66,6 +63,5 @@ while True:
         print('motorway time = ' + str(round(motorwaytime,2)) + 'Hr')
 
         os.system("pause")
-        
         break
         
